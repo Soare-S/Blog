@@ -4,12 +4,12 @@
         "author": "John Whohooo",
         "title": "First Post",
         "content": "This is my first post.",
-        "likes": 1
+        "likes": 20
     },
     {
         "id": 6,
         "title": "Hi, guys! one...",
-        "content": "fight for finish your studies, don't give up!",
+        "content": "Remember to fight for finishing your studies, don't give up!",
         "author": "Sorin",
         "likes": 1
     },
