@@ -10,20 +10,20 @@
     <h1>Welcome to My Flask Blog!</h1>
     <div class="post">
        <ul>
-      {% for post in posts %}
-        <li>
-          <h2>{{ post['title'] }}</h2>
-          <p>{{ post['content'] }}</p>
-          <p>{{ post['author'] }}</p>
-          <a href="/like/{{ post['id'] }}">Like</a>
-            <p>Likes: {{ post['likes'] }}</p>
-          <a href="/delete/{{ post['id'] }}" class="btn">Delete</a>
-          <a href="/edit/{{ post['id'] }}" class="btn btn-primary">Edit</a>
+        {% for post in posts %}
+          <li>
+            <h2 class="post-title">{{ post['title'] }}</h2>
+            <p class="content">{{ post['content'] }}</p>
+            <p class="author"><em>Author: {{ post['author'] }}</em></p>
+            <a href="/like/{{ post['id'] }}" class="like-btn">Like</a>
+            <p class="like-counts">Likes: {{ post['likes'] }}</p>
+            <a href="/delete/{{ post['id'] }}" class="btn btn-danger">Delete</a>
+            <a href="/edit/{{ post['id'] }}" class="btn btn-primary">Edit</a>
             <br><br>
-        </li>
-      {% endfor %}
-    </ul>
-    <a href="{{ url_for('add') }}">Add a Blog Post</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <a href="{{ url_for('add') }}" class="btn add-btn">Add a Blog Post</a>
     </div>
 </body>
 </html>

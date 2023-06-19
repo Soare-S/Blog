@@ -1,27 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F5F5F5;
-    padding: 20px;
-    color: #333;
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
 
 h1 {
-    text-align: center;
-    color: #4F4F4F;
+  text-align: center;
+  background-color: plum;
+  padding: 20px;
+  color: #fff;
 }
 
 .post {
-    background-color: #FFF;
-    border: 1px solid #DDD;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+  background-color: #333;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-.post h2 {
-    margin-top: 0;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.post p {
-    margin: 10px 0;
+li {
+  margin-bottom: 20px;
+  border-bottom: 5px solid #555;
+  padding-bottom: 20px;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #fff;
+  margin-bottom: 5px;
+}
+p.like-counts {
+  width: 7%;
+  padding: 5px 5px 5px 10px;
+  border-radius: 20px;
+  color: black;
+  background-color: beige;
+}
+
+p.content {
+  background-color: #968;
+  padding: 10px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.author {
+  text-align: right;
+  font-weight: bold;
+  color: plum;
+}
+
+a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+a.btn-primary {
+  background-color: teal;
+}
+
+a.btn-danger {
+  background-color: crimson;
+}
+
+a.like-btn {
+  background-color: gold;
+}
+
+a.add-btn {
+  background-color: silver;
+  color: black;
 }
